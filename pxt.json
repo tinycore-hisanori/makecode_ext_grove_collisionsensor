@@ -1,0 +1,17 @@
+{
+  "name": "makecode_ext_grove_collision_sensor",
+  "version": "0.0.1",
+  "description": "Grove Collision Sensor for micro:bit",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts",
+    "README.md"
+  ],
+  "supportedTargets": [
+    "microbit"
+  ],
+  "public": true
+}
