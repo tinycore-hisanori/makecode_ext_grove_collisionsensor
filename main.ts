@@ -1,14 +1,15 @@
 /**
- * Grove Collision Sensor for micro:bit
- * Active LOW digital sensor
+ * Grove Collision Sensor
  */
-namespace groveCollisionSensor {
+//% color=#00AACC icon="\uf071"
+namespace groveCollision {
+
     let _pin = DigitalPin.P1
 
     /**
-     * 使用するピンを設定
+     * Set sensor pin
      */
-    //% block="collision sensor pin %pin"
+    //% block="set collision sensor pin %pin"
     //% weight=100
     export function setPin(pin: DigitalPin): void {
         _pin = pin
@@ -16,7 +17,7 @@ namespace groveCollisionSensor {
     }
 
     /**
-     * 衝突を検出したか
+     * Collision detected
      */
     //% block="collision detected"
     //% weight=90
@@ -31,12 +32,11 @@ namespace groveCollisionSensor {
     }
 
     /**
-     * 現在の生値を返す
-     * 0 = 衝突検出, 1 = 非検出
+     * Raw value
      */
     //% block="collision raw value"
     //% weight=80
-    export function rawValue(): number {
+    export function raw(): number {
         return pins.digitalReadPin(_pin)
     }
 }
