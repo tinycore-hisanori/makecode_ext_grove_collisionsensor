@@ -7,11 +7,6 @@
     "core": "*"
   },
   "files": [
-    "main.ts",
-    "README.md"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ],
-  "public": true
+    "main.ts"
+  ]
 }
